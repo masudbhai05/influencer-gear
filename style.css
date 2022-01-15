@@ -245,15 +245,112 @@ footer{
       footer section style ends here  
 ---------------------------------------*/
 
+
+
+
+
 /*--------------------------------------
      responsive starts here  
 -----------------------------------------*/
 
-@media screen and (max-width:688px) {
-    body{
-   
-        width: 290px;
+/*---------------------
+ Tablet responsive 
+ ----------------------*/
+
+@media only screen and (max-width:992px) {
+    
+    
+    .header-main{
+        width: 992px;
+        display: flex;
+        flex-direction: column-reverse;
     }
+
+    .container {
+        width: 922px;
+        margin: 60px auto;
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 42px;
+        color: #3A3A3A;
+        text-align: center;
+    }
+    .about-influencer {
+        font-size: 18px;
+        margin: 20px 3px;
+        color: #3A3A3A;
+    }
+    .preebook-now{
+        background-color: #e0412c;
+    padding: 24px 90px;
+    border-radius: 10px;
+        
+        
+    }
+
+    .image img{
+        width: 440px;
+        height: 414px;
+        margin-left: -25px;
+    }
+
+    .collection-tilte> h3 {
+        font-size: 35px;
+        color: #3A3A3A;
+        text-align: center;
+        margin-left: 100px;
+    }
+
+    .collection-boxes {
+        margin: 0px -66px;
+        width: 1047px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 30px;
+    }
+
+    .influencer-container{
+        display: block;
+        align-items: center;
+        box-shadow: 0 0 27px #eeeeee;
+        border-radius: 8px;
+
+    }
+    
+    .influencer-container{
+        display: flex;
+    }
+
+    .influencer-combine img {
+        width: 386px;
+    }
+
+    .influencer-combine, .influencer-combine-details {
+        width: 992px;
+        margin: 0 7px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        width: 999px;
+    }
+}
+
+/*---------------------
+ Tablet responsive ends 
+ ----------------------*/
+
+/*---------------------
+ Mobile responsive 
+ ----------------------*/
+
+@media screen and (max-width:688px) {
     
     
     .header-main{
@@ -325,7 +422,7 @@ footer{
     }
 
     .influencer-combine, .influencer-combine-details {
-        width: 400px;
+        width: 386px;
         margin: 0 7px;
     }
 
@@ -335,9 +432,13 @@ footer{
     }
 
     footer{
-        width: 400px;
+        width: 688px;
     }
 }
+
+/*---------------------
+ Mobile responsive end
+ ----------------------*/
 
 /*--------------------------------------
      responsive ends here  
